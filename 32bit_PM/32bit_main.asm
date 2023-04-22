@@ -6,9 +6,9 @@
     call print
 
     call switch_to_pm
-    ;jmp $
+    jmp $
 
-%include "boot_sect_print.asm"
+%include "../boot_sect/boot_sect_print.asm"
 %include "32bit_gdt.asm"
 %include "32bit_print.asm"
 %include "32bit_switch.asm"
